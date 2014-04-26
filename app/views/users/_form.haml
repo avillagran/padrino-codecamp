@@ -1,0 +1,10 @@
+.form-group
+    %label Nombre:
+    = f.text_field :name, class: 'form-control'
+.form-group
+    %label Edad:
+    = f.text_field :age, class: 'form-control'
+
+%button.btn.btn-primary{type: 'submit'}
+    %span.glyphicon.glyphicon-save
+    Guardar

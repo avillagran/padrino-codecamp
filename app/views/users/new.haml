@@ -1,0 +1,4 @@
+%h1 Nuevo usuario
+
+= form_for @user, url(:users, :create) do |f|
+    = partial 'users/form', locals: {f: f}

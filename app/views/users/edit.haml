@@ -1,0 +1,4 @@
+%h1 Editar
+
+= form_for @user, url(:users, :update, params[:id]) do |f|
+    = partial 'users/form', locals: {f: f}
